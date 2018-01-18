@@ -1,0 +1,78 @@
+{
+  "name": "Tagger",
+  "version": "1.0.0",
+  "description": "An desktop app helping you create tag for release.",
+  "main": "main",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "app": "electron .",
+    "webpack": "webpack",
+    "dist": "build",
+    "lint": "eslint ."
+  },
+  "build": {
+    "appId": "com.keepsite.tagger",
+    "mac": {
+      "category": "Development"
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "AppImage",
+        "rpm"
+      ]
+    },
+    "win": {
+      "target": [
+        "squirrel"
+      ]
+    }
+  },
+  "keywords": [
+    "electron",
+    "react.js"
+  ],
+  "author": {
+    "name": "Michael Yin",
+    "email": "michael@keepsite.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-builder-squirrel-windows": "^19.55.0",
+    "shell-env": "^1.0.0",
+    "shell-quote": "^1.6.1",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap-sass": "3",
+    "bootswatch": "3",
+    "css-loader": "^0.28.9",
+    "electron": "^1.7.10",
+    "electron-builder": "^19.54.0",
+    "electron-eslint": "^3.12.2",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "node-sass": "^4.7.2",
+    "prettier": "^1.10.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.0",
+    "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  }
+}
